@@ -3,7 +3,6 @@ voteDR
 
 link to the site:  https://wftsai.github.io/voteDR/
 
-<!DOCTYPE html>
 <html>
 <body>
 
