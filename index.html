@@ -9,7 +9,7 @@
   
   GitHubTest - v4
   <!--<iframe></iframe>-->
-   <iframe id="GASiframe_GitHubTest" src="https://script.google.com/macros/s/AKfycbxaOA1F_avQYWCa3uCL7F0jOW5Xjl0Z-7xIEH4UxTnpVc4F-czz/exec" frameborder="0" width="100%" height="1000px" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox"></iframe>
+   <iframe id="GASiframe_GitHubTest" src="" frameborder="0" width="100%" height="1000px" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox"></iframe>
   
   
   test1
@@ -81,7 +81,8 @@ test2-4
       //let urlParameters = "form";
       //let currURL = 1;
       //urlParameters = currUrl.split('-')[1];
-      document.getElementById("GASiframe_GitHubTest").src = document.getElementById("GASiframe_GitHubTest").src + "url=" + urlParameters;// "url=" + urlParameters;// + "?page=createAccount";
+      const mainURL = "https://script.google.com/macros/s/AKfycbxaOA1F_avQYWCa3uCL7F0jOW5Xjl0Z-7xIEH4UxTnpVc4F-czz/exec";
+      document.getElementById("GASiframe_GitHubTest").src = mainURL + "?url=" + urlParameters + "&mainURL=" + mainURL;// "url=" + urlParameters;// + "?page=createAccount";
     }
   </script>
   
