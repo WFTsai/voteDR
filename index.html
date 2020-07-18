@@ -62,8 +62,12 @@ test2-2
 
     function myFunction() {
       //debugger;
-      //alert("Wait")
-      document.getElementById("GASiframe_GitHubTest").src = document.getElementById("GASiframe_GitHubTest").src;// + "?page=createAccount";
+      alert("The URL of this page is: " + window.location.href);
+      alert("second");
+      let urlParameters = "form";
+      let currURL = 1;
+      urlParameters = currUrl.split('-')[1];
+      document.getElementById("GASiframe_GitHubTest").src = document.getElementById("GASiframe_GitHubTest").src + "page=" + urlParameters;// "url=" + urlParameters;// + "?page=createAccount";
     }
   </script>
   
