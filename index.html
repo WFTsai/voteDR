@@ -65,7 +65,7 @@ test2-2
     function myFunction() {
       //debugger;
       const urlParameters = new URLSearchParams(window.location.search);
-      const myParameters = urlParams.get('myParam');
+      const parameterValues = urlParameters.get('parameterValues');
       //alert(urlParams);
       //debugger;
       alert(myParameters);
@@ -78,7 +78,7 @@ test2-2
       //let urlParameters = "form";
       //let currURL = 1;
       //urlParameters = currUrl.split('-')[1];
-      document.getElementById("GASiframe_GitHubTest").src = document.getElementById("GASiframe_GitHubTest").src + "page=" + myParameters;// "url=" + urlParameters;// + "?page=createAccount";
+      document.getElementById("GASiframe_GitHubTest").src = document.getElementById("GASiframe_GitHubTest").src + "page=" + parameterValues;// "url=" + urlParameters;// + "?page=createAccount";
     }
   </script>
   
