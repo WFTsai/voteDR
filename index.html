@@ -69,11 +69,11 @@ test2-4
       const urlParam = new URLSearchParams(window.location.search);
       //const parameterValues = urlParameters.get('parameterValues');
       //debugger;
-      alert(urlParam);
-      debugger;
-      urlParam = "createAccount";
-      alert(urlParam);
-      debugger;
+      //alert(urlParam);
+      //debugger;
+      //urlParam = "createAccount";
+      //alert(urlParam);
+      //debugger;
       //alert(parameterValues);
 
       //alert("The URL of this page is: " + window.location.href);
@@ -85,6 +85,9 @@ test2-4
       //urlParameters = currUrl.split('-')[1];
       const mainURL = "https://script.google.com/macros/s/AKfycbxaOA1F_avQYWCa3uCL7F0jOW5Xjl0Z-7xIEH4UxTnpVc4F-czz/exec";
       document.getElementById("GASiframe_GitHubTest").src = mainURL + "?urlParam=" + urlPara + "&mainURL=" + mainURL;// "url=" + urlParameters;// + "?page=createAccount";
+      
+      alert(document.getElementById("GASiframe_GitHubTest").src);
+      debugger;
     }
   </script>
   
