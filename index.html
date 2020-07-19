@@ -52,7 +52,7 @@
   
   GitHubTest - v4
   <!--<iframe></iframe>-->
-   <iframe id="GASiframe_GitHubTest" src="https://script.google.com/macros/s/AKfycbxaOA1F_avQYWCa3uCL7F0jOW5Xjl0Z-7xIEH4UxTnpVc4F-czz/exec" frameborder="0" width="100%" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox"></iframe>
+   <iframe id="GASiframe_GitHubTest" src="" frameborder="0" width="100%" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox"></iframe>
   
   
   test1
@@ -65,11 +65,11 @@ test2-6
    document.addEventListener("DOMContentLoaded", myFunction);
 
     function myFunction() {
-      alert('Hallå');
-      debugger;
+      //alert('Hallå');
+      //debugger;
       const urlParam = new URLSearchParams(window.location.search);
-      alert('Hallå2');
-      debugger;
+      //alert('Hallå2');
+      //debugger;
       //const parameterValues = urlParameters.get('parameterValues');
       //debugger;
       //alert(urlParam);
@@ -86,14 +86,14 @@ test2-6
       //let urlParameters = "form";
       //let currURL = 1;
       //urlParameters = currUrl.split('-')[1];
-      const mainURL = document.getElementById("GASiframe_GitHubTest").src;//"https://script.google.com/macros/s/AKfycbxaOA1F_avQYWCa3uCL7F0jOW5Xjl0Z-7xIEH4UxTnpVc4F-czz/exec";
-      alert('Hallå3');
-      debugger;
-      document.getElementById("GASiframe_GitHubTest").src = mainURL + "?urlParam=" + urlPara + "&mainURL=" + mainURL;// "url=" + urlParameters;// + "?page=createAccount";
-      alert('Hallå4');
-      debugger;
-      alert(document.getElementById("GASiframe_GitHubTest").src);
-      debugger;
+      const mainURL = "https://script.google.com/macros/s/AKfycbxaOA1F_avQYWCa3uCL7F0jOW5Xjl0Z-7xIEH4UxTnpVc4F-czz/exec";
+      //alert('Hallå3');
+      //debugger;
+      document.getElementById("GASiframe_GitHubTest").src = mainURL + "?urlParam=" + urlParam + "&mainURL=" + mainURL;// "url=" + urlParameters;// + "?page=createAccount";
+      //alert('Hallå4');
+      //debugger;
+      //alert(document.getElementById("GASiframe_GitHubTest").src);
+      //debugger;
     }
   </script>
   
